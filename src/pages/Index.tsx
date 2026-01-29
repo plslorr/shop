@@ -30,6 +30,7 @@ const Index = () => {
   const [showReceipt, setShowReceipt] = useState(false);
   const [receiptItems, setReceiptItems] = useState<typeof cart.items>([]);
   const [receiptTotal, setReceiptTotal] = useState(0);
+  const [receiptDiscount, setReceiptDiscount] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
 
   const cart = useCart();
@@ -41,6 +42,7 @@ const Index = () => {
   const handleCheckout = () => {
     setReceiptItems([...cart.items]);
     setReceiptTotal(cart.total);
+    setReceiptDiscount(cart.discount);
     cart.clearCart();
     cart.setIsOpen(false);
     setShowReceipt(true);
@@ -135,6 +137,8 @@ const Index = () => {
         onUpdateQuantity={cart.updateQuantity}
         onRemove={cart.removeFromCart}
         onCheckout={handleCheckout}
+        subtotal={cart.subtotal}
+        discount={cart.discount}
         total={cart.total}
       />
 
@@ -142,6 +146,7 @@ const Index = () => {
       <Receipt
         items={receiptItems}
         total={receiptTotal}
+        discount={receiptDiscount}
         isOpen={showReceipt}
         onClose={() => setShowReceipt(false)}
       />

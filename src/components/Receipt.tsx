@@ -14,11 +14,12 @@ import whiteCrumpledPaper from '@/assets/background/white-crumpled-paper-texture
 interface ReceiptProps {
   items: CartItem[];
   total: number;
+  discount?: number;
   isOpen: boolean;
   onClose: () => void;
 }
 
-export const Receipt = ({ items, total, isOpen, onClose }: ReceiptProps) => {
+export const Receipt = ({ items, total, discount = 0, isOpen, onClose }: ReceiptProps) => {
   const [printProgress, setPrintProgress] = useState(0);
   const [receiptDetails, setReceiptDetails] = useState({ number: '', date: '', time: '' });
   const receiptRef = useRef<HTMLDivElement>(null);
@@ -157,8 +158,14 @@ export const Receipt = ({ items, total, isOpen, onClose }: ReceiptProps) => {
                     <div className="space-y-1">
                         <div className="flex justify-between text-gray-500">
                             <span>Subtotal</span>
-                            <span>${total.toFixed(2)}</span>
+                            <span>${(total - discount).toFixed(2)}</span>
                         </div>
+                        {discount < 0 && (
+                            <div className="flex justify-between text-gray-500">
+                                <span>Discount</span>
+                                <span>${discount.toFixed(2)}</span>
+                            </div>
+                        )}
                         <div className="flex justify-between text-base font-bold text-black pt-2">
                             <span>TOTAL</span>
                             <span>${total.toFixed(2)}</span>

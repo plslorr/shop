@@ -20,6 +20,8 @@ interface CartProps {
   onRemove: (productId: string) => void;
   onCheckout: () => void;
   total: number;
+  subtotal: number;
+  discount: number;
 }
 
 export const Cart = ({
@@ -30,6 +32,8 @@ export const Cart = ({
   onRemove,
   onCheckout,
   total,
+  subtotal,
+  discount,
 }: CartProps) => {
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
@@ -122,12 +126,24 @@ export const Cart = ({
               </div>
             </ScrollArea>
 
-            <SheetFooter className="border-t border-dashed border-border pt-10 flex-col gap-8">
-              <div className="flex justify-between items-center w-full">
-                <span className="font-handwritten text-xl sm:text-lg text-ink-gray">Total</span>
-                <span className="font-handwritten text-2xl sm:text-xl text-ink-brown px-6 py-1 rounded-full bg-washi-yellow ml-4">
-                  ${total.toFixed(2)}
-                </span>
+            <SheetFooter className="border-t border-dashed border-border pt-6 flex-col gap-4">
+              <div className="space-y-1 w-full">
+                <div className="flex justify-between items-center text-ink-gray">
+                  <span className="font-handwritten text-lg">Subtotal</span>
+                  <span className="font-handwritten text-lg">${subtotal.toFixed(2)}</span>
+                </div>
+                {discount < 0 && (
+                  <div className="flex justify-between items-center text-red-600/80">
+                    <span className="font-handwritten text-lg">Discount</span>
+                    <span className="font-handwritten text-lg">${discount.toFixed(2)}</span>
+                  </div>
+                )}
+                <div className="flex justify-between items-center pt-2">
+                  <span className="font-handwritten text-xl text-ink-gray">Total</span>
+                  <span className="font-handwritten text-2xl text-ink-brown px-4 py-1 rounded-full bg-washi-yellow">
+                    ${total.toFixed(2)}
+                  </span>
+                </div>
               </div>
               <Button
                 onClick={onCheckout}

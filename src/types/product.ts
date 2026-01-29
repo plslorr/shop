@@ -8,6 +8,7 @@ export interface Product {
   width: string;
   material: string;
   soldOut?: boolean;
+  discountGroup?: number;
 }
 
 export interface CartItem {
