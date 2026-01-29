@@ -56,7 +56,6 @@ export const ProductCard = ({
           <img
             src={product.image}
             alt={product.name}
-            loading="lazy"
             className={cn(
               "w-full h-full object-cover transition-opacity duration-300",
               product.soldOut && "opacity-60 grayscale-[0.5]"
