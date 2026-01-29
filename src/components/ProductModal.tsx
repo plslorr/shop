@@ -58,6 +58,7 @@ export const ProductModal = ({
               <img
                 src={product.image}
                 alt={product.name}
+                loading="lazy"
                 className={cn(
                   "w-full aspect-square object-cover",
                   product.soldOut && "opacity-60 grayscale-[0.5]"
