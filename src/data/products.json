@@ -1,0 +1,172 @@
+[
+    {
+        "id": "1",
+        "name": "breakthrough",
+        "price": 3.50,
+        "image": "breakthrough.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "height": "2.5 inches",
+        "width": "3 inches",
+        "material": "Vinyl (waterproof)"
+    },
+    {
+        "id": "2",
+        "name": "cool",
+        "price": 2.75,
+        "image": "cool.png",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "height": "2 inches",
+        "width": "2.5 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "3",
+        "name": "correction",
+        "price": 4.00,
+        "image": "correction.png",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "height": "3 inches",
+        "width": "3 inches",
+        "material": "Glossy Paper"
+    },
+    {
+        "id": "4",
+        "name": "emeowtions 1",
+        "price": 3.25,
+        "image": "emeowtions1.png",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "height": "2.5 inches",
+        "width": "2.5 inches",
+        "material": "Vinyl (waterproof)"
+    },
+    {
+        "id": "5",
+        "name": "emeowtions 2",
+        "price": 3.75,
+        "image": "emeowtions2.png",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "height": "2.5 inches",
+        "width": "2.5 inches",
+        "material": "Vinyl (waterproof)"
+    },
+    {
+        "id": "6",
+        "name": "girl",
+        "price": 2.50,
+        "image": "girl.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "7",
+        "name": "joy",
+        "price": 2.50,
+        "image": "joy.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "8",
+        "name": "love",
+        "price": 2.50,
+        "image": "love.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "9",
+        "name": "monkee",
+        "price": 2.50,
+        "image": "monkee.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "10",
+        "name": "pins",
+        "price": 2.50,
+        "image": "pins.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "11",
+        "name": "plscook",
+        "price": 2.50,
+        "image": "plscook.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "12",
+        "name": "plsfish",
+        "price": 2.50,
+        "image": "plsfish.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "13",
+        "name": "plsgeon",
+        "price": 2.50,
+        "image": "plsgeon.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "14",
+        "name": "plsplay",
+        "price": 2.50,
+        "image": "plsplay.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "15",
+        "name": "plsrelax",
+        "price": 2.50,
+        "image": "plsrelax.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "16",
+        "name": "rise",
+        "price": 2.50,
+        "image": "rise.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    },
+    {
+        "id": "17",
+        "name": "surrendered",
+        "price": 2.50,
+        "image": "surrendered.png",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "height": "2 inches",
+        "width": "2 inches",
+        "material": "Matte Paper"
+    }
+]
